@@ -24,7 +24,7 @@ This is an Android training for different stage of people. The goal is to let pe
 | :--- | :--- |
 | [M01: Intro to Android Studio](./src/Basic/M01) | Basic Usage of the Android Studio |
 | [M02: Intro to Kotlin](./src/Basic/M02) | Basic knowledge of the Android programming language |
-| [M03: Intro to UIKit](./src/Basic/M03) | View, Label, Button, Image, TextField |
+| [M03: Android Brief Introduction](./src/Basic/M03) | Basic knowledge of Android System and Application |
 | [M04: Layout](./src/Basic/M04) | Frame, Autoresizing, AutoLayout |
 | [M05: Debugging](./src/Basic/M05) | Breakpoints, Logs |
 | [M06: UITableView](./src/Basic/M06) | How to implement a long list in iOS |
