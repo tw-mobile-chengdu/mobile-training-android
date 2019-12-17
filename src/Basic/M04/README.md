@@ -91,3 +91,30 @@ There are a lot of mock server library, e.g. [mountbank](http://www.mbtest.org/)
 Two Tips:
 * Use google search to setup the Node environment in you local machine.
 * Use google search to get some HTTP/HTTPS document to read.
+
+### Add MVP Architecture
+
+When build the real application, we can't put every code into one activity class, so we need add the design pattern in our project.
+
+* [Android Architecture Samples](https://github.com/android/architecture-samples)
+  * Switch the branch to "todo-mvp-kotlin".
+  * Other branch show up others android architecture pattern
+* [Model–view–presenter](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93presenter)
+
+Add BaseView.kt and BasePersenter.kt in package `com.thoughtworks.miniweibo`
+And also refactor the MainActivity to:
+
+<img src="./images/04-mvp.png" width=300 />
+
+### Add 3rd Libraries
+
+#### Gradle
+
+Android application use gradle as the build tool.
+[Configure your build](https://developer.android.com/studio/build)
+[Gradle tips and recipes](https://developer.android.com/studio/build/gradle-tips)
+
+So if you want add 3rd libraries, you should add dependencies into `build.gradle` file.
+
+#### Connectivity
+
