@@ -4,7 +4,7 @@ The Android Studio provide everything you need to develop an Android application
 
 ## Setup Android SDK and Simulator
 
-- Download Android Studio from Android developer website.
+- Download Android Studio from Android developer website. (Recommend use 3.6 preview or above)
 - Android Platform (Recommand least version)
 <img src="./images/01-android-platform.png" width=700 />
 - SDK Tools

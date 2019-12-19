@@ -33,80 +33,7 @@ Use empty activity phone and tablet template create the project:
 
 After empty project created, you can use git init a repo, and add your first commit.
 
-### Create Mock Server
-
-Most the mobile app will use the HTTP/HTTPS protocol to communicate with the server, we will setup a mock server to help us do the app develop:
-
-* setup mock server because sometime the server delivery with app at the same time, we can change our app point to local mock server, then you can start the develop/debug.
-* we will setup the functional test for the app, we also need this mock server, it more stable then the real server.
-
-There are a lot of mock server library, e.g. [mountbank](http://www.mbtest.org/), [nock](https://github.com/nock/nock). in this workshop we choose [json-server](https://github.com/typicode/json-server).
-
-* Change the Project type from "Android" to "Project", and in root folder, create a new folder `mock`.
-<img src="./images/04-mock-folder.png" width=700 />
-
-* In terminal, cd to `mock` folder, run command `npm init`, every question you can keep default value.
-* In terminal, run command `npm install json-server` to install node module.
-* In `mock` folder, create new file `db.json`, and add some content.
-
-```json
-{
-  "home_timeline": [
-    {
-      "created_at": "Tue May 31 17:46:55 +0800 2011",
-      "id": 11488058246,
-      "text": "求关注。",
-      "reposts_count": 8,
-      "comments_count": 9,
-      "user": {
-        "id": 1404376560,
-        "screen_name": "zaku",
-        "name": "zaku"
-      }
-    }
-  ],
-  "comments": [
-    {
-      "created_at": "Wed Jun 01 00:50:25 +0800 2011",
-      "id": 12438492184,
-      "text": "love your work.......",
-      "user": {
-        "id": 1404376560,
-        "screen_name": "zaku",
-        "name": "zaku"
-      }
-    }
-  ]
-}
-```
-
-* open the package.json file, in `scrips` setion add `start: "json-server --watch db.json"`.
-* In termimal, run command `npm start` to start the mock server.
-* Then you can see the mock server info in terminal:
-<img src="./images/04-mock.png" width=700 />
-
-* Add `node_modules` and `.idea` into `.gitignore`, then add a new git commit.
-<img src="./images/04-gitignore.png" width=700 />
-
-Two Tips:
-* Use google search to setup the Node environment in you local machine.
-* Use google search to get some HTTP/HTTPS document to read.
-
-### Add MVP Architecture
-
-When build the real application, we can't put every code into one activity class, so we need add the design pattern in our project.
-
-* [Android Architecture Samples](https://github.com/android/architecture-samples)
-  * Switch the branch to "todo-mvp-kotlin".
-  * Other branch show up others android architecture pattern
-* [Model–view–presenter](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93presenter)
-
-Add BaseView.kt and BasePersenter.kt in package `com.thoughtworks.miniweibo`
-And also refactor the MainActivity to:
-
-<img src="./images/04-mvp.png" width=300 />
-
-### Add 3rd Libraries
+### Add Libraries
 
 #### Gradle
 
@@ -114,7 +41,32 @@ Android application use gradle as the build tool.
 [Configure your build](https://developer.android.com/studio/build)
 [Gradle tips and recipes](https://developer.android.com/studio/build/gradle-tips)
 
-So if you want add 3rd libraries, you should add dependencies into `build.gradle` file.
+#### Architecture Guide
 
-#### Connectivity
+Android provide the officia best practise architecture guide.
 
+[Architecture Guide](https://developer.android.com/jetpack/docs/guide)
+Your can refer this guide to set up your project gralde build and write your fisrt activtiy.
+
+* [LiveData](https://developer.android.com/topic/libraries/architecture/livedata)
+* [ViewBinding](https://developer.android.com/topic/libraries/view-binding)
+* [DataBinding](https://developer.android.com/topic/libraries/data-binding)
+* [Room](https://developer.android.com/topic/libraries/architecture/room)
+* [ViewModle](https://developer.android.com/topic/libraries/architecture/viewmodel)
+
+If you are first develop the android app, you should better use the old way to build a demo activty to familiarize the activity.
+
+You also need add 3rd libraries, you should add dependencies into `build.gradle` file.
+
+* Add dependencies in `build.gradle`
+  * [Dagger](https://dagger.dev/android) and [Retrofit](https://square.github.io/retrofit/)
+
+#### Use TDD write your first API Service
+
+* Create new Kotlin test file "WeiboServiceTest.kt" in test "com.thoughtworks.miniweibo.api"
+* Add test `get home timeline post`
+* Most time when we set up the project, we need add some helper/util class first, and these module may be created by your previous project or you can refer to the [android architecture simple](https://github.com/android/architecture-components-samples/tree/master/GithubBrowserSample), or check the [commit](https://github.com/tw-mobile-chengdu/android-miniweibo/commit/f69bf7e815b6563f26d4d10cf415d28ffa7506e0)
+
+Tips:
+
+* You should study [TDD](https://martinfowler.com/bliki/TestDrivenDevelopment.html), [Junit](https://junit.org/junit5/docs/current/user-guide/) first.
