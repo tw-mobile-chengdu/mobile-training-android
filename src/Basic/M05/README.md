@@ -166,4 +166,48 @@ After create the link, re-launch the app, then you can use command to test the d
 $ adb shell am start -W -a android.intent.action.VIEW -d "https://miniweibo.thoughtworks.com/post/1" com.thoughtworks.miniweibo
 ```
 
-For testing
+#### Testing
+
+Read First:
+* [Test Navigation](https://developer.android.com/guide/navigation/navigation-testing)
+* [Mockito](https://site.mockito.org/)
+
+* Add dependency
+
+```gradle
+dependencies {
+    implementation ("androidx.fragment:fragment-testing:1.1.0", {
+        exclude group: 'androidx.test', module: 'core'
+    })
+
+    ...
+
+    androidTestImplementation 'org.mockito:mockito-core:2.25.0'
+    androidTestImplementation 'org.mockito:mockito-android:2.25.0'
+}
+```
+
+* Add Test File `HomeTestSuite` into `com.thoughtworks.miniweibo.ui.home(androidTest)`
+
+```Kotlin
+@RunWith(AndroidJUnit4::class)
+class HomeTestSuite {
+    @Test
+    fun testGoToPostDetailFragment() {
+        // Given
+        val mockNavController = mock(NavController::class.java)
+        val titleScenario = launchFragmentInContainer<HomeTimelineFragment>(null,
+            R.style.AppTheme
+        )
+        titleScenario.onFragment { fragment ->
+            Navigation.setViewNavController(fragment.requireView(), mockNavController)
+        }
+
+        // When
+        onView(ViewMatchers.withId(R.id.goto_post_detail)).perform(ViewActions.click())
+
+        // Then
+        verify(mockNavController).navigate(HomeTimelineFragmentDirections.actionHomeTimelineFragmentToPostDetailFragment())
+    }
+}
+```
