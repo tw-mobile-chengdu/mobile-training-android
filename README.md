@@ -25,8 +25,8 @@ This is an Android training for different stage of people. The goal is to let pe
 | [M01: Intro to Android Studio](./src/Basic/M01) | Basic Usage of the Android Studio |
 | [M02: Intro to Kotlin](./src/Basic/M02) | Basic knowledge of the Android programming language |
 | [M03: Android Brief Introduction](./src/Basic/M03) | Basic knowledge of Android System and Application |
-| [M04: Weibo Workshop Preparation](./src/Basic/M04) | Project Setup, Mock, 3rd Library |
-| [M05: Weibo Workshop Story One](./src/Basic/M05) | Frame, Autoresizing, AutoLayout |
+| [M04: Weibo Workshop Preparation](./src/Basic/M04) | Project Setup, 3rd Library |
+| [M05: Weibo Workshop Story One](./src/Basic/M05) | Navigation |
 | [M06: UITableView](./src/Basic/M06) | How to implement a long list in iOS |
 | [M07: Networking](./src/Basic/M07) | Basic knowledge of sending a request to server |
 | [M08: Unit Testing](./src/Basic/M08) | Basic knowledge testing and how to write a unit test in iOS |

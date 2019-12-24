@@ -54,7 +54,7 @@ Your can refer this guide to set up your project gralde build and write your fis
 * [Room](https://developer.android.com/topic/libraries/architecture/room)
 * [ViewModle](https://developer.android.com/topic/libraries/architecture/viewmodel)
 
-If you are first develop the android app, you should better use the old way to build a demo activty to familiarize the activity.
+If you are first develop the android app, you should better use the old way to build a demo activty to familiarize the activity, fragment and service components.
 
 You also need add 3rd libraries, you should add dependencies into `build.gradle` file.
 
@@ -70,3 +70,4 @@ You also need add 3rd libraries, you should add dependencies into `build.gradle`
 Tips:
 
 * You should study [TDD](https://martinfowler.com/bliki/TestDrivenDevelopment.html), [Junit](https://junit.org/junit5/docs/current/user-guide/) first.
+
