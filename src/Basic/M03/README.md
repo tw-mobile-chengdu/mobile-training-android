@@ -6,7 +6,7 @@ Android is an open source, Linux-based software stack created for a wide array o
 
 <img src="./images/03-android-stack.png" width=700 />
 
-Every introduce of these components you can find in (Platform Architecture)[https://developer.android.com/guide/platform]
+Every introduce of these components you can find in [Platform Architecture](https://developer.android.com/guide/platform)
 
 ### Application Fundamentals
 
@@ -14,7 +14,7 @@ Every introduce of these components you can find in (Platform Architecture)[http
 
 There are four different types of app components:
 
-* Activities([Introduction to Activities](https://developer.android.com/guide/components/activities/intro-activities), [Understand the Activity Lifecycle](https://developer.android.com/guide/components/activities/activity-lifecycle))
+* Activities([Introduction to Activities](https://developer.android.com/guide/components/activities/intro-activities), [Understand the Activity Life Cycle](https://developer.android.com/guide/components/activities/activity-lifecycle))
 * Services
 * Broadcast receivers
 * Content providers

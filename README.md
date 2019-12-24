@@ -5,7 +5,7 @@ This is an Android training for different stage of people. The goal is to let pe
 ## Prerequisites
 
 - Android Studio
-  - Download the Android Studio 3.5.3 or above from android developer [https://developer.android.com/studio](https://developer.android.com/studio)
+  - Download the Android Studio 3.6 or above from android developer [https://developer.android.com/studio](https://developer.android.com/studio)
   - Make sure you follow the Android SDK setup guide when you first open the Android Studio(You can also skip it and setup it in IDE setting later).
 
 - Clone this repo 

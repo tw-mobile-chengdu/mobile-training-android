@@ -43,18 +43,18 @@ Android application use gradle as the build tool.
 
 #### Architecture Guide
 
-Android provide the officia best practise architecture guide.
+Android provide the official best practice architecture guide.
 
 [Architecture Guide](https://developer.android.com/jetpack/docs/guide)
-Your can refer this guide to set up your project gralde build and write your fisrt activtiy.
+Your can refer this guide to set up your project gradle build and write your first activity.
 
 * [LiveData](https://developer.android.com/topic/libraries/architecture/livedata)
 * [ViewBinding](https://developer.android.com/topic/libraries/view-binding)
 * [DataBinding](https://developer.android.com/topic/libraries/data-binding)
 * [Room](https://developer.android.com/topic/libraries/architecture/room)
-* [ViewModle](https://developer.android.com/topic/libraries/architecture/viewmodel)
+* [ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel)
 
-If you are first develop the android app, you should better use the old way to build a demo activty to familiarize the activity, fragment and service components.
+If you are first develop the android app, you should better use the old way to build a demo activity to familiarize the activity, fragment and service components.
 
 You also need add 3rd libraries, you should add dependencies into `build.gradle` file.
 

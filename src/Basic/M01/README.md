@@ -5,7 +5,7 @@ The Android Studio provide everything you need to develop an Android application
 ## Setup Android SDK and Simulator
 
 - Download Android Studio from Android developer website. (Recommend use 3.6 preview or above)
-- Android Platform (Recommand least version)
+- Android Platform (Recommend least version)
 <img src="./images/01-android-platform.png" width=700 />
 - SDK Tools
 <img src="./images/01-sdk-tools.png" width=700 />
@@ -14,7 +14,7 @@ The Android Studio provide everything you need to develop an Android application
 
 ## Walking through the Android Studio
 
-### Create a new empty activty project
+### Create a new empty activity project
 
 <img src="./images/01-new-project.png" width=700 />
 <img src="./images/01-project-setting.png" width=700 />
@@ -29,7 +29,7 @@ The Android Studio provide everything you need to develop an Android application
 5. The tool windows give you access to specific tasks like project management, search, version control, and more. You can expand them and collapse them.
 6. The status bar displays the status of your project and the IDE itself, as well as any warnings or messages.
 
-### Project Stucture
+### Project Structure
 <img src="./images/01-project-structure.png" width=700 />
 
 1. The manifest file describes essential information about your app to the Android build tools, the Android operating system, and Google Play.
@@ -67,7 +67,7 @@ Then you can click the "Run" button on the toolbar, you should see simulator sta
 
 ## What's next?
 
-- Enough of the Kotlin languge to get you going
+- Enough of the Kotlin language to get you going
 - Retrieving data from the network
 - Displaying listings in a scrolling table
 - Testing and debugging your application
@@ -75,4 +75,4 @@ Then you can click the "Run" button on the toolbar, you should see simulator sta
 ## Further reading
 
 - Android Studio documentation https://developer.android.com/studio/intro
-- Android Studio keymaps https://developer.android.com/studio/intro/keyboard-shortcuts
+- Android Studio keymap https://developer.android.com/studio/intro/keyboard-shortcuts
