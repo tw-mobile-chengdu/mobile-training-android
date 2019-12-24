@@ -8,7 +8,6 @@ When we start a new project, most of time we will create Iteration 0 to setup th
 #### Scope
 
 * Project init
-* Mock server setup
 * Add 3rd Library
 
 #### Acceptance Criteria
@@ -16,13 +15,9 @@ When we start a new project, most of time we will create Iteration 0 to setup th
 | Given | When | Then |
 | :--- | :--- | :--- |
 | I am a developer | I use Android Studio import the project | I can see the main project already set up done, and there is a MainActivity |
-| I am a developer | I use the command line tool start the mock server | I can see the http server has been started |
-| I am a developer | I use Android Studio import the project | I can see the MVP architecture already set up |
-| I am a developer | I user Android Studio import the project | I can see the unit test & functional test already set up |
-| I am a developer | I user Android Studio import the project | I can see the network connectivity already set up |
+| I am a developer | I user Android Studio import the project | I can see the unit test already set up |
 
-
-### Create the Andorid Project
+### Create the Android Project
 
 Use empty activity phone and tablet template create the project:
 
