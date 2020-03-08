@@ -54,9 +54,10 @@ If you are first develop the android app, you should better use the old way to b
 You also need add 3rd libraries, you should add dependencies into `build.gradle` file.
 
 * Add dependencies in `build.gradle`
-  * [Dagger](https://dagger.dev/android) and [Retrofit](https://square.github.io/retrofit/)
+  * [Retrofit](https://square.github.io/retrofit/)
+  * [Dagger](https://dagger.dev/android) is optional to use
 
-#### Use TDD write your first API Service
+#### Use TDD write your first API Service (Optional, if you already familiar with Kotlin TDD skill then you can setup it)
 
 * Create new Kotlin test file "WeiboServiceTest.kt" in test "com.thoughtworks.miniweibo.api"
 * Add test `get home timeline post`

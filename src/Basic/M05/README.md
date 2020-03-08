@@ -152,20 +152,6 @@ Change the MainActivity code to:
     }
 ```
 
-
-#### Add the deep link
-
-[Deep Link](https://developer.android.com/guide/navigation/navigation-deep-link)
-
-* Add the deep link "https://miniweibo.thoughtworks.com/post/{id}" for postDetailFragment in navigation design window.
-* Add `<nav-graph android:value="@navigation/main" />` for MainActivity in AndroidManifest.xml.
-
-After create the link, re-launch the app, then you can use command to test the deep link.
-
-```bash
-$ adb shell am start -W -a android.intent.action.VIEW -d "https://miniweibo.thoughtworks.com/post/1" com.thoughtworks.miniweibo
-```
-
 #### Testing
 
 Read First:
