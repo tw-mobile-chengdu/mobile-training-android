@@ -10,6 +10,7 @@ This is our first story build the real page, in this page we should display a po
 * Post card content
 * Post list
 * Post card click navigation
+* For simplify the session, we only display three fixed size of images, and doesn't zoom to fit display the images
 
 ### Out Of Scope
 
@@ -36,10 +37,20 @@ This is our first story build the real page, in this page we should display a po
 * [Drawable resources](https://developer.android.com/guide/topics/resources/drawable-resource)
 * [Layout resource](https://developer.android.com/guide/topics/resources/layout-resource)
 
-* Test
+Mobile compile with the computer, the most different is the hardware limitation, e.g. screen size, battery, most of app the list display the mass data and use some mobile specific optimization to reduce the CPU and battery usage.
+
+The advantage of RecyclerView is the re-use of Recycler(View), which is a view previously used to display data for a specific adapter position may be placed in a cache for later reuse to display the same type of data again later. This can drastically improve performance by skipping initial layout inflation or construction.
+
+Android provide the adapter: A subclass of RecyclerView.Adapter responsible for providing views that represent items in a data set. you must implement the interface which can make android know which data should display and how many you want to display.
+
+# Practice
+
+* Use the ConstraintLayout to finish the detail page.
+
+# Test
 
 When we build the UI of page, most of time we don't use the TDD, so in this story we don't have test cover the UI. in the real project, we use the e2e screen shot test to cover the UI of application.
 
-* Network
+# Network
 
 Because this story is focus on UI building, so we create the dummy network module in the activity, in the real project, the network module should use DI or ref from global module.

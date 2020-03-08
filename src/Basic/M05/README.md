@@ -152,6 +152,13 @@ Change the MainActivity code to:
     }
 ```
 
+#### Practice
+* On the detail page, you can add any component
+  * change the style attribute of component
+  * add listener of these component to handle the user input
+* Components you can find from doc [Look and feel](https://developer.android.com/guide/topics/ui/look-and-feel)
+* Study the [Build a Responsive UI with ConstraintLayout](https://developer.android.com/training/constraint-layout)
+
 #### Testing
 
 Read First:
