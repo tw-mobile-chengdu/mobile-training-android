@@ -12,12 +12,6 @@ This is an Android training for different stage of people. The goal is to let pe
   
   - [https://github.com/tw-mobile-chengdu/mobile-training-android](https://github.com/tw-mobile-chengdu/mobile-training-android)
 
-## Sessions
-
-![#2d5df0][#2d5df0]&nbsp;&nbsp;The `Basic` sessions are for beginner.
-
-![#f4d26c][#f4d26c]&nbsp;&nbsp;The `Advanced` sessions ayre for people with experience.
-
 ### ![#2d5df0][#2d5df0] Basic
 
 | Topic | Comments |
@@ -28,24 +22,6 @@ This is an Android training for different stage of people. The goal is to let pe
 | [M04: Weibo Workshop Preparation](./src/Basic/M04) | Project Setup, 3rd Library |
 | [M05: Weibo Workshop Story One](./src/Basic/M05) | Navigation |
 | [M06: Weibo Workshop Story Two](./src/Basic/M06) | RecyclerView, Swipe-to-Refresh |
-| [M07: Networking](./src/Basic/M07) | Basic knowledge of sending a request to server |
-| [M08: Unit Testing](./src/Basic/M08) | Basic knowledge testing and how to write a unit test in iOS |
-| [M09: Releasing](./src/Basic/M09) | How we release the iOS App |
-| [M10: Workshop](./src/Basic/M10_FinalTest) | POS App |
-
-### ![#f4d26c][#f4d26c] Advanced
-
-| Topic | Comments |
-| :--- | :--- |
-| [M01: App Architecture](./src/Advanced/M01) | MVC, MVVM, VIPER, Clean Swift |
-| M02: Functional Swift | Functional Programming in Swift |
-| [M03: UICollectionView](./src/Advanced/M03) | ImagePicker |
-| [M04: Dynamic Content List](./src/Advanced/M04) | Long List with self sizing list item |
-| [M05: Database](./src/Advanced/M05) | Sqlite, CoreData, Realm |
-| [M06: Continuous Integration](./src/Advanced/M06)| BuddyBuild, Jenkins |
-| M07: Data Tracking | What, Why, When, How |
-| M08: UI Testing | Native Testing |
-| M09: Workshop | Wechat Moment |
 
 <!--Parameters-->
 <!--Blue-->
