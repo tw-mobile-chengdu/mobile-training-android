@@ -47,6 +47,8 @@ Android provide the adapter: A subclass of RecyclerView.Adapter responsible for 
 
 * Use the ConstraintLayout to finish the detail page.
 
+> Tips: The layout for detail page is similar with one card in the list page, study [Navigation Pass Data](https://developer.android.com/guide/navigation/navigation-pass-data) first, passing the weibo id to detail page, detail page use this id request the detail information then display them. For detail page layout, you can duplicate the weibo content layout, or extract the weibo content layout then use the [layout include](https://developer.android.com/training/improving-layouts/reusing-layouts).
+
 # Test
 
 When we build the UI of page, most of time we don't use the TDD, so in this story we don't have test cover the UI. in the real project, we use the e2e screen shot test to cover the UI of application.
