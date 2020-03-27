@@ -43,6 +43,9 @@ The advantage of RecyclerView is the re-use of Recycler(View), which is a view p
 
 Android provide the adapter: A subclass of RecyclerView.Adapter responsible for providing views that represent items in a data set. you must implement the interface which can make android know which data should display and how many you want to display.
 
+<img src="./images/06-recycler_recycle.png" width=300 />
+<img src="./images/06-recyclerview_strcture.png" width=300 />
+
 # Practice
 
 * Use the ConstraintLayout to finish the detail page.
