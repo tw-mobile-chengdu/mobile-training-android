@@ -4,12 +4,17 @@ The Android Studio provide everything you need to develop an Android application
 
 ## Setup Android SDK and Simulator
 
-- Download Android Studio from Android developer website. (Recommend use 3.6 preview or above)
-- Android Platform (Recommend least version)
+- Download Android Studio from [Android developer website](https://developer.android.com/studio/). (Recommend use 3.6 preview or above)
+- Android Platform (Recommend latest version)
 <img src="./images/01-android-platform.png" width=700 />
-- SDK Tools
+
+### SDK Tools
+- Tools > SDK Manager > Android SDK (Under System Settings)
 <img src="./images/01-sdk-tools.png" width=700 />
-- Create simulator
+
+### Create Simulator
+- Tools > AVD manager > `+ Create Virtual Device`
+- Choose Pixel 2 device and Android Q as system image
 <img src="./images/01-avd.png" width=700 />
 
 ## Walking through the Android Studio
@@ -39,19 +44,20 @@ The Android Studio provide everything you need to develop an Android application
 
 Then you can click the "Run" button on the toolbar, you should see simulator started and show a blank screen.
 
-> More Android Studio introduce you can refer from site [Android Studio](https://developer.android.com/studio)
+> You can refer to [Android Studio website](https://developer.android.com/studio) for more information 
 
 ### Add some elements on to the screen
 
-- Open the content_main.xml under layout resource.
-  - Drag the `Plain Text` component at the below of Hello world text.
+- Open the `activity_main.xml` under layout resource.
+  - Drag a `Plain Text` component (under Palette > Text) under the Hello World text.
   - Select the `Plain Text` component, remove the text attribute and add hint text "Input your name".
-  - Drag the `Button` component at the below of name text input component.
+  - Drag the `Button` component under the `Plain Text` component.
   - Select the `Button` component, and change the text to "Say Hello".
 
 <img src="./images/01-create-layout.png" width=700 />
 
 - Run the app, you should see the following screen in simulator.
+- Tip: If your layout does not look correct, you have to set the constraints on the `Plain Text` and `Button` component in order for the UI elements to be displayed properly
 
 <img src="./images/01-init-ui.png" width=300 />
 
@@ -59,6 +65,7 @@ Then you can click the "Run" button on the toolbar, you should see simulator sta
 
 - Open the MainActivity class
   - Add code `button.setOnClickListener { textView.text = "Hello ${editText.text}!" }` at the bottom of `onCreate` method.
+  - Make sure your Hello World `TextView` has the id of `textView` and your `Plain Text` has the id of `editText`
   - Tips, when first you type the button, IDE will show error and say "Unresolved reference: button", you can hit `Alt+Enter`, IDE will auto import the layout reference.
 
 <img src="./images/01-onclick-listener.png" width=700 />
